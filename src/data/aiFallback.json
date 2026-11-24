@@ -1,0 +1,55 @@
+{
+  "tasks": {
+    "tsk-04": {
+      "cause": "Task tsk-04 (Checkout Flow Architecture & API) is overdue past the 2026-11-09 deadline at only 40% completion, having received no updates for 8 days. Assignee Sarah Chen is simultaneously handling 4 open tasks due this week, creating an acute delivery bottleneck that directly blocks 2 downstream integration deliverables (tsk-05 and tsk-06).",
+      "actions": [
+        "Reassign secondary checkout styling tasks from Sarah Chen to Marcus Taylor to alleviate owner overload.",
+        "Hold an emergency unblocking standup on 2026-11-13 specifically for the tsk-04 API schema definitions.",
+        "Authorize a revised milestone target of 2026-11-16 to unfreeze dependent tasks tsk-05 and tsk-06."
+      ]
+    },
+    "tsk-09": {
+      "cause": "Task tsk-09 (Legacy Database Schema Migration) missed its 2026-11-10 due date and is severely lagging schedule expectations (35% complete vs 100% time elapsed). Database schema discrepancies are requiring deeper manual validation than originally budgeted in the 11-day effort estimate.",
+      "actions": [
+        "Pair Marcus Taylor with Priya Patel to automate data migration validation scripts.",
+        "Narrow migration scope to critical ecommerce tables required for the November release.",
+        "Log a schedule variance notice and adjust target completion to 2026-11-18."
+      ]
+    },
+    "tsk-05": {
+      "cause": "Task tsk-05 (Payment Gateway & Security Compliance) is 15% complete against an elapsed timeline of 45.8% (20+ point lag) and is functionally blocked because its upstream prerequisite tsk-04 is overdue and incomplete.",
+      "actions": [
+        "Mock the pending tsk-04 API contract locally so Alex Rivera can proceed with client-side gateway integration.",
+        "Confirm PCI compliance checklist with Priya Patel in parallel to prevent late-stage testing bottlenecks.",
+        "Review tsk-05 progress immediately once tsk-04 achieves 75% completion."
+      ]
+    },
+    "tsk-06": {
+      "cause": "Task tsk-06 (Order Confirmation & Invoicing Service) is currently halted at 50% completion because it depends directly on overdue task tsk-04. Furthermore, owner Sarah Chen is facing concurrency overload with 4 critical items due within the 7-day window.",
+      "actions": [
+        "Temporarily delegate order template layout work to Alex Rivera to maintain velocity.",
+        "Finalize invoice PDF generation logic using static fixture data pending tsk-04 API readiness.",
+        "Re-sync with PM on 2026-11-14 following the checkout architecture milestone."
+      ]
+    },
+    "tsk-17": {
+      "cause": "Task tsk-17 (Push Notification Microservice) in Mobile App Launch passed its 2026-11-11 due date at 90% completion. While nearly finished, Apple APNs and Firebase certificate verification was delayed during staging environment cutover.",
+      "actions": [
+        "Upload production APNs keys to the staging notification cluster on 2026-11-13.",
+        "Execute end-to-end device token push verification tests to achieve 100% sign-off.",
+        "Close out task tsk-17 and document certificate rotation dates in the project runbook."
+      ]
+    }
+  },
+  "reports": {
+    "prj-1": {
+      "summary": "Website Redesign Status Report (Week ending Nov 12, 2026):\n1. Project Health is CRITICAL with 2 overdue items (tsk-04 Checkout API at 40%, tsk-09 Database Migration at 35%).\n2. Key Blocker: Task tsk-04 directly halts downstream payment gateway (tsk-05) and invoicing (tsk-06) integration streams.\n3. Capacity Bottleneck: Technical lead Sarah Chen is overallocated across 4 near-term deliverables due within 7 days.\n4. Accomplishments: User personas (tsk-01), wireframes (tsk-02), and design systems (tsk-03) successfully reached 100% completion.\n5. Recommended PM Action: Offload secondary tasks from Sarah Chen and approve an emergency API mock contract for tsk-05."
+    },
+    "prj-2": {
+      "summary": "Mobile App Launch Status Report (Week ending Nov 12, 2026):\n1. Project Health is AT RISK with 1 overdue deliverable (tsk-17 Push Notifications at 90%) and 1 active dependency chain.\n2. Milestones Achieved: Store specifications (tsk-14) and OAuth 2.0 SDK integration (tsk-15) are completed on schedule.\n3. In Flight: Offline sync protocol (tsk-16) is tracking at 30% and Biometric Auth (tsk-18) is on schedule at 15%.\n4. Near-Term Risk: Finalizing APNs certificates for tsk-17 is required before end-to-end beta distribution can commence.\n5. Recommended PM Action: Secure APNs staging certificates on Nov 13 to mark tsk-17 completed and unblock telemetry testing."
+    },
+    "all": {
+      "summary": "Executive Portfolio Status Report (All Projects, Nov 12, 2026):\n1. Portfolio Status: 20 total deliverables tracked across 2 streams (Website Redesign and Mobile App Launch).\n2. Critical Flags: Exactly 2 RED tasks (tsk-04, tsk-09) and 3 AMBER tasks requiring immediate management intervention.\n3. Delivery Bottleneck: Overdue checkout architecture (tsk-04) is delaying 2 downstream ecommerce modules.\n4. Resource Alert: Sarah Chen holds 4 open tasks due by Nov 19; team load balancing is urgently advised.\n5. PM Next Steps: Implement API stubs for tsk-05, reassign support tasks to Marcus Taylor, and review burn-down recovery by Nov 16."
+    }
+  }
+}
