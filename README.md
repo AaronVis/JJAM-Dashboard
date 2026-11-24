@@ -21,6 +21,25 @@ Traditional project management tools alert managers *after* a milestone has been
 
 ---
 
+## 📸 Screenshots
+
+### Dashboard overview
+![Dashboard overview](docs/screenshots/dashboard-overview.png)
+
+### Task list and risk status
+![Task list and risk status](docs/screenshots/task-list.png)
+
+### Create a task
+![Create a task](docs/screenshots/create-task.png)
+
+### Add a project
+![Add a project](docs/screenshots/create-project.png)
+
+### Weekly AI report
+![Weekly AI report](docs/screenshots/weekly-ai-report.png)
+
+---
+
 ## 🏗️ Architecture & Boundaries
 
 The codebase is built with strict modular separation to ensure that screens remain decoupled from data sources and AI providers:
